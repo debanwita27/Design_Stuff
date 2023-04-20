@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+
+$bg-color: white;
+
+body {
+  font-family: "Italiana", sans-serif;
+
+  background-color: $bg-color;
+ 
+}
+#home-component{
+    top : 0;
+}
+.main-container {
+  padding: 0 6.597vw;
+  z-index: 99;
+}
+
+.title-container {
+    
+    position: relative;
+    display: block;
+    padding-top: 37.77vh;
+    padding-top: calc(var(5.6px, 1vh) * 37.77);
+    padding-bottom: 10vh;
+    padding-bottom: calc(var(5.6px, 1vh) * 10);
+  
+    h1 {
+      display: block;
+      font-size: 10vw;
+      line-height: 0.5;
+      color: #2d2d2d;
+      transition: color 0.1s ease-in-out;
+    }
+    hr{
+        display: none;
+        width:50%;
+        margin:0 ;
+    }
+    &:hover {
+      h1 {
+        color: #bababa;
+      }
+    }
+  
+    .title-item {
+    
+      cursor: pointer;
+      &:hover {
+        h1 {
+          color: #2d2d2d;
+        //   font-size: 7vw;
+        }
+        hr{
+            display : block;
+        }
+      }
+    }
+  }
+
+.image-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -6.597vw;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  top: 50px;
+
+
+  img {
+    position: absolute;
+    height: 60vh;
+    width: auto;
+    transition: transform 0.1s ease-in-out;
+    filter: grayscale(1);
+    z-index: 98;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.04),
+      0 4px 8px rgba(0, 0, 0, 0.04), 0 8px 16px rgba(0, 0, 0, 0.04),
+      0 16px 32px rgba(0, 0, 0, 0.04), 0 32px 64px rgba(0, 0, 0, 0.04);
+
+    &.active {
+      z-index: 99;
+    }
+   
+ }
+}

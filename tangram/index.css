@@ -1,0 +1,112 @@
+#triangle1 {
+  animation: moveTriangle1 5s 0s forwards;
+}
+@keyframes moveTriangle1 {
+  0% {
+    transform: translate(0);
+  }
+  80% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(90px, 400px) rotate(-90deg);
+  }
+}
+
+#square {
+  animation: moveSquare 5s 0s forwards;
+}
+@keyframes moveSquare {
+  0% {
+    transform: translate(185px, -125px) rotate(45deg);
+    /* transform: translate(0px); */
+  }
+  80% {
+    transform: translate(185px, -125px) rotate(45deg);
+    /* /transform: translate(0px); */
+  }
+  100% {
+    transform: translate(190px, 35px) rotate(45deg);
+  }
+}
+
+#bigTriangle {
+  animation: moveBigTriangle 5s 0s forwards;
+}
+@keyframes moveBigTriangle {
+  0% {
+    transform: translate(0);
+  }
+  80% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(500px, 490px) rotate(180deg);
+  }
+}
+
+#parallelogram {
+  animation: moveParallelogram 5s 0s forwards;
+}
+
+@keyframes moveParallelogram {
+  0% {
+    transform: translate(0);
+  }
+  80% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(255px, 90px);
+  }
+}
+
+#bigTriangle2 {
+  animation: moveBigTriangle2 5s 0s forwards;
+}
+@keyframes moveBigTriangle2 {
+  0% {
+    transform: translate(0);
+  }
+  80% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(5px, 160px) rotate(-90deg);
+  }
+}
+
+#sideTriangle {
+  animation: sideTriangle 5s 0s forwards;
+}
+@keyframes sideTriangle {
+  0% {
+    transform: translate(0);
+  }
+  80% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-160px, 170px);
+  }
+}
+#triangle2 {
+  animation: moveTriangle2 5s 0s forwards;
+}
+@keyframes moveTriangle2 {
+  0% {
+    transform: translate(0);
+  }
+  80% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(580px, -245px) rotate(90deg);
+  }
+}
+
+button {
+  padding: 10px;
+  margin: 50px;
+  border-radius: 5px;
+}
